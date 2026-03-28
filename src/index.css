@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;600;800&family=Great+Vibes&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Libre Baskerville", serif;
+  --font-sans: "Inter", sans-serif;
+  --font-calligraphy: "Great Vibes", cursive;
+  --color-naranja-vibrant: #ff7e00;
+  --color-naranja-soft: #f49939;
+  --color-naranja-black: #000000;
+}
+
+body {
+  @apply bg-[#ff7e00] text-black selection:bg-black selection:text-[#ff7e00];
+}
+
+.text-stroke {
+  -webkit-text-stroke: 1px black;
+  color: transparent;
+}
+
+.orange-pattern {
+  background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
+  background-blend-mode: overlay;
+}
